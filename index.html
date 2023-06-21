@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Responsive Gallery</title>
+        <style>
+            body {
+                font-family: Courier, monospace;
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                column-gap: 60px;
+                row-gap: 50px;
+                
+            }
+
+            .tile {
+                border: 1px solid #f1f1f1;
+                box-shadow: 4px 4px 8px #efefef;
+                border-radius: 8px;
+                overflow: hidden;
+				background-color: white;
+                
+            }
+                
+            .tile-background {
+                height: 100px;
+                background-image: url(placeholder-image.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+				background-color: aqua;
+                
+            }
+            
+			.tile-text {
+                font-size: 15px;
+                margin: 16px 0px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+				text-align: center;
+				font-family: monospace;
+            }
+
+            @media screen and (max-width: 1280px) {
+                #grid {
+                    grid-template-columns: repeat(5, 1fr);
+             }
+        }
+            @media screen and (max-width: 768px) {
+                #grid {
+                    grid-template-columns: repeat(3, 1fr);
+             }
+        }
+
+        @media screen and (max-width: 320px) {
+            #grid {
+                grid-template-columns: repeat(1, 1fr);
+                justify-items: center;
+             }
+        }
+
+            @media screen and (max-width: 320px) {
+                .tile {
+                    width: 172px;
+             }
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Galery heading</h1>
+        <div id="grid">
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+               <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+               </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </body>
+</html>
